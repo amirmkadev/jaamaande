@@ -1,26 +1,141 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "IRANYekan";
+  src: url("/fonts/IRANYekanThin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "IRANYekan";
+  src: url("/fonts/IRANYekanLight.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "IRANYekan";
+  src: url("/fonts/IRANYekanRegular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "IRANYekan";
+  src: url("/fonts/IRANYekanMedium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "IRANYekan";
+  src: url("/fonts/IRANYekanBold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "IRANYekan";
+  src: url("/fonts/IRANYekanExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "IRANYekan";
+  src: url("/fonts/IRANYekanBlack.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "IRANYekan";
+  src: url("/fonts/IRANYekanExtraBlack.ttf") format("truetype");
+  font-weight: 950;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #020201;
+  --foreground: #f7ead2;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+html,
 body {
+  direction: rtl;
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "IRANYekan", Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+}
+
+.kiswah-bg {
+  background:
+    radial-gradient(circle at 78% 28%, rgba(211, 164, 70, 0.22), transparent 31%),
+    radial-gradient(circle at 16% 68%, rgba(126, 82, 22, 0.18), transparent 36%),
+    #020201;
+}
+
+.kiswah-pattern {
+  background-image:
+    radial-gradient(circle at center, rgba(216, 177, 94, 0.18) 0 1px, transparent 2px),
+    repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.035) 0 1px, transparent 1px 5px),
+    repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.028) 0 1px, transparent 1px 6px);
+  background-size: 52px 52px, auto, auto;
+}
+
+.kiswah-ornament {
+  background-image:
+    repeating-linear-gradient(
+      90deg,
+      transparent 0 18px,
+      rgba(216, 177, 94, 0.22) 18px 20px,
+      transparent 20px 38px
+    );
+}
+.kiswah-bg {
+  background:
+    radial-gradient(circle at 78% 28%, rgba(211, 164, 70, 0.22), transparent 31%),
+    radial-gradient(circle at 16% 68%, rgba(126, 82, 22, 0.18), transparent 36%),
+    #020201;
+}
+
+.kiswah-pattern {
+  background-image:
+    radial-gradient(circle at center, rgba(216, 177, 94, 0.18) 0 1px, transparent 2px),
+    repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.035) 0 1px, transparent 1px 5px),
+    repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.028) 0 1px, transparent 1px 6px);
+  background-size: 52px 52px, auto, auto;
+}
+
+.kiswah-ornament {
+  background-image:
+    repeating-linear-gradient(
+      90deg,
+      transparent 0 18px,
+      rgba(216, 177, 94, 0.22) 18px 20px,
+      transparent 20px 38px
+    );
 }
