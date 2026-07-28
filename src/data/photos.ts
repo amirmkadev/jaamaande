@@ -56,7 +56,7 @@ export const photos: PhotoItem[] = [
   {
     id: "6",
     number: "۰۶",
-    title: "راه‌بندها و ازدحام",
+    title: "سربازها و مسیر حرم",
     chapter: "ایام انتظار",
     image: "/images/photos/photo-06.jpg",
     caption:
@@ -65,7 +65,7 @@ export const photos: PhotoItem[] = [
   {
     id: "7",
     number: "۰۷",
-    title: "سربازها و مسیر حرم",
+    title: "راه‌بندها و ازدحام",
     chapter: "ایام انتظار",
     image: "/images/photos/photo-07.jpg",
     caption: "راه‌بندهای بی‌دلیل و اعصاب‌خردکن سعودی.",
@@ -152,7 +152,7 @@ export const photos: PhotoItem[] = [
   {
     id: "17",
     number: "۱۷",
-    title: "حجر اسماعیل",
+    title: "استلام‌ رکن یمانی",
     chapter: "وداع با خانه",
     image: "/images/photos/photo-17.jpg",
     caption: "استلام رکن یمانی. یا علی.",
