@@ -15,7 +15,7 @@ export default function GalleryPage() {
       <section className="relative mx-auto max-w-7xl">
         <SiteHeader />
 
-        <div className="mb-14 grid items-end gap-8 lg:grid-cols-[1fr_0.55fr]">
+        <div className="mb-14">
           <div className="text-right">
             <p className="mb-5 inline-flex rounded-full border border-[#d8b15e]/30 bg-[#080604]/70 px-5 py-2 text-sm text-[#d8b15e]">
               روایت تصویری سفر
@@ -28,16 +28,6 @@ export default function GalleryPage() {
             <p className="max-w-3xl text-lg leading-[2.15] text-[#d8c7a6]">
               این گالری، امتداد تصویری کتاب است. هر عکس، یک نقطه از سفر را باز
               می‌کند؛ از مکه و عرفات تا مدینه و بقیع.
-            </p>
-          </div>
-
-          <div className="rounded-[1.5rem] border border-[#d8b15e]/20 bg-[#050403]/70 p-5 text-right shadow-[0_0_55px_rgba(216,177,94,0.06)]">
-            <p className="mb-2 text-sm font-bold text-[#d8b15e]">
-              مسیر QRهای کتاب
-            </p>
-            <p className="text-sm leading-8 text-[#d8c7a6]">
-              هر کارت به صفحه اختصاصی همان عکس وصل است و لینک همان صفحه برای QR
-              چاپی استفاده می‌شود.
             </p>
           </div>
         </div>
@@ -61,7 +51,9 @@ export default function GalleryPage() {
                     src={photo.image}
                     alt={photo.title}
                     fill
-                    className="object-cover transition duration-700 group-hover:scale-105"
+                    className={`object-cover transition duration-700 group-hover:scale-105 ${
+                      photo.id === "7" ? "object-bottom" : "object-center"
+                    }`}
                   />
                 </div>
 
@@ -86,7 +78,7 @@ export default function GalleryPage() {
 
                 <div className="mt-6 flex items-center justify-between border-t border-[#d8b15e]/14 pt-4">
                   <span className="text-xs text-[#d8c7a6]/65">
-                    /photos/{photo.id}
+                    عکس {photo.number}
                   </span>
                   <span className="text-sm font-black text-[#d8b15e] transition group-hover:translate-x-[-4px]">
                     مشاهده عکس ←

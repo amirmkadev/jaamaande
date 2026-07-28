@@ -70,33 +70,6 @@ export default function AboutPage() {
             </div>
           </div>
         </div>
-
-        <div className="grid gap-6 pb-12 md:grid-cols-3">
-          {[
-            {
-              title: "ساختار تصویری",
-              text: "۳۲ دریچه تصویری که هرکدام به بخشی از روایت کتاب وصل می‌شوند.",
-            },
-            {
-              title: "الهام بصری",
-              text: "طراحی سایت از پارچه کعبه، رنگ مشکی عمیق و نقش‌های طلایی الهام گرفته است.",
-            },
-            {
-              title: "تجربه خواننده",
-              text: "کتاب روی کاغذ شروع می‌شود و با اسکن QR، در فضای دیجیتال ادامه پیدا می‌کند.",
-            },
-          ].map((item) => (
-            <div
-              key={item.title}
-              className="rounded-[1.7rem] border border-[#d8b15e]/24 bg-[#050403]/82 p-6 text-right shadow-[0_0_45px_rgba(216,177,94,0.05)]"
-            >
-              <p className="mb-3 text-sm font-bold text-[#d8b15e]">
-                {item.title}
-              </p>
-              <p className="leading-8 text-[#d8c7a6]">{item.text}</p>
-            </div>
-          ))}
-        </div>
       </section>
     </main>
   );

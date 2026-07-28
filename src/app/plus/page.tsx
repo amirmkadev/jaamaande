@@ -23,22 +23,16 @@ export default function PlusPage() {
           </h1>
 
           <p className="mb-12 max-w-3xl text-lg leading-[2.15] text-[#d8c7a6]">
-            این بخش برای چیزهایی است که در نسخه چاپی کتاب جا نشده‌اند؛ عکس‌های
-            بیشتر، نوشته‌های تکمیلی، توضیحات پشت‌صحنه و روایت‌هایی که بعداً به
-            کتاب اضافه می‌شوند.
+            عکس‌ها، یادداشت‌ها و روایت‌های تکمیلی «جامانده» در این بخش منتشر
+            می‌شوند.
           </p>
 
           <div className="rounded-[2rem] border border-[#d8b15e]/24 bg-[#050403]/78 p-8 shadow-[0_0_70px_rgba(216,177,94,0.08)]">
             <p className="mb-4 text-sm font-bold text-[#d8b15e]">به‌زودی</p>
 
             <h2 className="mb-4 text-3xl font-black text-[#f6dfaa]">
-              محتوای پلاس هنوز اضافه نشده است.
+              روایت‌های تکمیلی در راه‌اند.
             </h2>
-
-            <p className="max-w-2xl leading-9 text-[#d8c7a6]">
-              بعداً می‌توانیم همین‌جا کارت‌هایی شبیه گالری بسازیم؛ با عکس، متن،
-              عنوان و لینک اختصاصی برای هر محتوای اضافه.
-            </p>
 
             <Link
               href="/gallery"

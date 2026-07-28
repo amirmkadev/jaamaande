@@ -57,24 +57,6 @@ export default async function PhotoPage({ params }: PhotoPageProps) {
               {photo.caption}
             </p>
 
-            <div className="mb-8 rounded-[1.4rem] border border-[#d8b15e]/22 bg-[#050403]/72 p-5 text-right shadow-[0_0_45px_rgba(216,177,94,0.06)]">
-              <div className="mb-4 flex items-center justify-between gap-4">
-                <p className="text-sm font-bold text-[#d8b15e]">
-                  مسیر QR این عکس
-                </p>
-                <span className="rounded-full border border-[#d8b15e]/20 px-3 py-1 text-xs text-[#d8c7a6]/70">
-                  لینک ثابت
-                </span>
-              </div>
-
-              <p
-                dir="ltr"
-                className="break-all rounded-xl border border-[#d8b15e]/15 bg-[#020201]/80 px-4 py-3 text-left text-sm leading-7 text-[#d8c7a6]"
-              >
-                /photos/{photo.id}
-              </p>
-            </div>
-
             <div className="grid gap-3 sm:grid-cols-3">
               {previousPhoto ? (
                 <Link
