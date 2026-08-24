@@ -57,6 +57,17 @@ export default async function PhotoPage({ params }: PhotoPageProps) {
               {photo.caption}
             </p>
 
+            {photo.id === "32" && (
+              <a
+                href="https://ble.ir/jaamaandebot"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mb-5 block w-full rounded-full bg-gradient-to-l from-[#b77a21] via-[#f0cf75] to-[#9b651a] px-5 py-3 text-center text-sm font-black text-[#130c04] shadow-[0_0_35px_rgba(215,169,75,0.24)] transition hover:scale-[1.02] sm:w-fit sm:min-w-48"
+              >
+                ثبت نظر
+              </a>
+            )}
+
             <div className="grid gap-3 sm:grid-cols-3">
               {previousPhoto ? (
                 <Link
