@@ -128,7 +128,7 @@ export const photos: PhotoItem[] = [
     number: "۱۴",
     title: "مشعر",
     chapter: "روزهای دلبری",
-    image: "/images/photos/photo-14-censored.jpg",
+    image: "/images/photos/photo-14-person-removed.png",
     caption:
       "مشعر یا مزدلفه، محشر صغراست. تو خیال کن چند میلیون کفن‌پوش تا طلوع نشسته‌اند تا صور رستاخیزشان بدمد و ناگاه با هم به سوی سرزمین موعود روانه می‌شوند…",
   },

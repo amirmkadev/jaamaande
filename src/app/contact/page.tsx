@@ -25,6 +25,21 @@ export default function ContactPage() {
             راه‌های ارتباطی رسمی کتاب «جامانده» و مؤلف در این صفحه منتشر
             می‌شوند.
           </p>
+
+          <div className="max-w-3xl rounded-[2rem] border border-[#d8b15e]/24 bg-[#050403]/78 p-8 shadow-[0_0_70px_rgba(216,177,94,0.08)]">
+            <p className="mb-5 text-lg leading-[2.15] text-[#d8c7a6]">
+              برای ثبت نظر می‌توانید از لینک زیر استفاده کنید:
+            </p>
+
+            <a
+              href="https://ble.ir/jaamaandebot"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex rounded-full bg-gradient-to-l from-[#b77a21] via-[#f0cf75] to-[#9b651a] px-8 py-4 text-base font-black text-[#130c04] transition hover:scale-[1.03]"
+            >
+              ثبت نظر در بله
+            </a>
+          </div>
         </div>
       </section>
     </main>
